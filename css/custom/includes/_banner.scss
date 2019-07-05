@@ -1,6 +1,6 @@
 #banner{
   position: relative;
-  background: url("{{ '../../img/banner.jpg' | relative_url }}");
+  background: url("{{ '/../../../img/banner.jpg' | relative_url }}");
   
   min-height: 250px;
 
