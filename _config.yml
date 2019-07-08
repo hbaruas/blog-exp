@@ -1,12 +1,16 @@
 # Site settings
-title:
+title: Saurabh kumar
 email: saurabhbaliyan000@gmail.com
-author:
-description:
-url:
+author: Saurabh Kumar
+description: >- # this means to ignore newlines until "baseurl:"
+  Saurabh Kumar is a test specialist automation and working in IBM, Bangalore.
+  you can find me on linkedin and github by using the given link or contact me using the given email Id. 
+  
 
+url: 
 # plugins
 plugins: [jekyll-paginate]
+
 paginate: 3
 
 # Build settings

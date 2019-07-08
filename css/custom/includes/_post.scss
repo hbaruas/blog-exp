@@ -3,6 +3,13 @@
     color: $primary;
     padding-top: 10px;
   }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $info;
+    }
+  }
   img {
     display: block;
     margin-left: auto;
