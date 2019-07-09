@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta itemprop="description" name="description" content="Saurabh Kumar is a test specialist automation and working in IBM, Bangalore. you can find me on linkedin and github by using the given link or contact me usi..." />
 
-  <title>Saurabh kumar | A Sample Post  </title>
+  <title>Saurabh kumar | Create a static website using Jekyll and how to host on Github pages.  </title>
 
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -64,18 +64,86 @@
   <div class="row">
     <div class="col">
       <p class="lead text-info">
-        Feb 1, 2018</br>
+        Jul 8, 2019</br>
         <a href="/about/">Saurabh Kumar</a> 
       </p>
-      <h1>A Sample Post</h1>
+      <h1>Create a static website using Jekyll and how to host on Github pages.</h1>
       <article>
-        <h2 id="lorem">Lorem</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dolore.</p>
+        <p>In this post I will be creating, a static website using jekyll, please go through the following installation guide to install required things, for the sake of not making this post very long I am, not writing about how to install everything in detail.</p>
 
-<h2 id="more-lorem">More Lorem</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsam nam sit in omnis id. Ut molestiae non velit inventore quas, laborum dolorum maiores beatae animi aspernatur reprehenderit accusantium nostrum?</p>
+<h4 id="installation">INSTALLATION</h4>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsam nam sit in omnis id. Ut molestiae non velit inventore quas, laborum dolorum maiores beatae animi aspernatur reprehenderit accusantium nostrum?</p>
+<ol>
+  <li>Install ruby for windows here is the link <a href="https://rubyinstaller.org/downloads/" target="_blank">https://rubyinstaller.org/downloads/</a></li>
+  <li>While installing a popup will come in the end make sure you have selected that.</li>
+  <li>In CMD install all the other dependencies  By pressing  1,2,3 and enter</li>
+  <li>Check whether ruby has installed or not.
+<br /></li>
+</ol>
+
+<h5 id="terminal">Terminal</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"> ruby –v
+ gem –v
+ </code></pre></figure>
+
+<p>if these two commands are giving output as a version then it means it has installed.</p>
+
+<p>5.Install Jekyll using gem, run command</p>
+<h5 id="terminal-1">Terminal</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem <span class="nb">install </span>jekyll bundler</code></pre></figure>
+
+<p>6.Run</p>
+<h5 id="terminal-2">Terminal</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Jekyll  <span class="nt">-v</span></code></pre></figure>
+
+<p>it must give an output telling that which version has been installed.
+So far installation is complete.</p>
+<h4 id="starting-the-new-website">Starting the new website.</h4>
+<p>Navigate to your desired folder where you want to create the directory structure for your newly created site and run the following command.</p>
+<h5 id="terminal-3">Terminal</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Jekyll new your_website_name</code></pre></figure>
+
+<p>Output would be something just like this.
+<img src="/img/Jekyllsite/jekyll-first-time.jpg" alt="first time when" class="img-fluid" /></p>
+
+<p>Now the website the basic skeleton has been developed the only thing we need to do is to start the local server and test, we can start the server using the following command.</p>
+<h5 id="terminal-4">Terminal</h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle <span class="nb">exec </span>jekyll serve </code></pre></figure>
+
+<p>it will start the server and will tell where we can check it
+<img src="/img/Jekyllsite/jekyll-serve.jpg" alt="jekyll-serve" class="img-fluid" /></p>
+
+<p>Now if we type the given url in our browser, we can see our recently created site, and the output will be something like this.</p>
+
+<p>The folder structure of the newly created static site will look something like this.
+<img src="/img/Jekyllsite/first-time-in-browser.jpg" alt="folder structure" class="img-fluid" /></p>
+
+<p>you can click on by default created very first post Welcome to Jekyll! and it will lead to a page having very useful basic information that how we can create the post and what other things you can do with jekyll.</p>
+
+<p>Now we need to have a look in the file and directoris created by jekyll by default, I am using Sublime Text text editor and that’s how it looks like.
+<img src="/img/Jekyllsite/folder-structure.jpg" alt="folder structure" class="img-fluid" /></p>
+
+<p>very first directory is for cached data, next directory is for where we are going to put all our posts, here we can see a markdown file, this is the same content which is being shown while we clicked on the by default created post.</p>
+
+<p>next directory is site this is the one where actually all of our compiled website is stored we don’t need to touch this folder as everything is being auto compiled and generated here by jekyll itself.</p>
+
+<p>we have a 404.html, a standard 404 page in case of some wrong URL is being passed.</p>
+
+<p>config.yml file is where all the front matter and everything will be define.</p>
+
+<p>then we have about.md page there this is the layout of already created about page.</p>
+
+<p>we have two gemfiles there you can see all the installed gems and you can also see the default theme being used by jekyll called “minima”.</p>
+
+<p>Then we have index.md there is nothing much inside it just the layout is given just the name of layout is given here which is being provided by default theme “minima”. We can define our own layout as well.</p>
+
+<p>let’s discuss few more things prior to create a new post.</p>
+
 
       </article>
     
