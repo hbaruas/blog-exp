@@ -43,7 +43,7 @@ Jekyll new your_website_name
 {% endhighlight %}
 
 Output would be something just like this.
-<img src="{{ "../img/Jekyllsite/jekyll-first-time.jpg" | relative_url }}" alt ="first time when" class="img-fluid"/>
+<img src="{{ "/img/Jekyllsite/jekyll-first-time.jpg" | relative_url }}" alt ="first time when" class="img-fluid"/>
 
 Now the website the basic skeleton has been developed the only thing we need to do is to start the local server and test, we can start the server using the following command.
 ##### Terminal
@@ -52,17 +52,19 @@ bundle exec jekyll serve
 {% endhighlight %}
 
 it will start the server and will tell where we can check it
-<img src="{{ "../img/Jekyllsite/jekyll-serve.jpg" | relative_url }}" alt ="jekyll-serve" class="img-fluid"/>
+<img src="{{ "/img/Jekyllsite/jekyll-serve.jpg" | relative_url }}" alt ="jekyll-serve" class="img-fluid"/>
 
 Now if we type the given url in our browser, we can see our recently created site, and the output will be something like this.
 
 The folder structure of the newly created static site will look something like this.
-<img src="{{ "../img/Jekyllsite/first-time-in-browser.jpg" | relative_url }}" alt ="folder structure" class="img-fluid"/>
+
+<img src="{{ "/img/Jekyllsite/first-time-in-browser.jpg" | relative_url }}" alt ="folder structure" class="img-fluid"/>
 
 you can click on by default created very first post Welcome to Jekyll! and it will lead to a page having very useful basic information that how we can create the post and what other things you can do with jekyll.
 
 Now we need to have a look in the file and directoris created by jekyll by default, I am using Sublime Text text editor and that's how it looks like.
-<img src="{{ "../img/Jekyllsite/folder-structure.jpg" | relative_url }}" alt ="folder structure" class="img-fluid"/>
+
+<img src= "{{ "/img/Jekyllsite/folder-structure.jpg" | relative_url }}" alt ="folder structure" class="img-fluid"/>
 
 very first directory is for cached data, next directory is for where we are going to put all our posts, here we can see a markdown file, this is the same content which is being shown while we clicked on the by default created post.
 
