@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a static website using Jekyll and how to host on Github pages.
-summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dolore.
+summary: In this post, I will be writing about how to start a static jekyll site and host it for free using github page.
 ---
 
 
@@ -81,6 +81,90 @@ we have two gemfiles there you can see all the installed gems and you can also s
 Then we have index.md there is nothing much inside it just the layout is given just the name of layout is given here which is being provided by default theme "minima". We can define our own layout as well.
 
 let's discuss few more things prior to create a new post.
+
+The name format of the post should be exactly similar to the one given post under posts folder, i.e. first date in the same format, and then post name if there is a space in the name of the post, that will be replace by the hyphen.
+
+<img src="{{ "/img/Jekyllsite/post_name.JPG" | relative_url }}" alt ="post name sample" class="img-fluid"/>
+
+Now create a new file as per the rules mentioned above, somwthing like this.
+
+<img src="{{ "/img/Jekyllsite/first_sample_post.JPG" | relative_url }}" alt ="first sample post" class="img-fluid"/>
+
+now paste this content in your newly created file.
+
+##### code for new post
+{% highlight HTML %}
+---
+layout: post
+title:  "posted very first time"
+---
+Hi this post is being created very firstt time, hopefully it should work
+{% endhighlight %}
+
+save it and refresh your page, output will be something just like this.
+
+<img src="{{ "/img/Jekyllsite/new_post.JPG" | relative_url }}" alt ="new sample post" class="img-fluid"/>
+if you will click on this the new page will open and you can see your detailed post.
+
+<img src="{{ "/img/Jekyllsite/detail_post.JPG" | relative_url }}" alt ="first detailed post" class="img-fluid"/>
+
+Now we know how to create a new blog post let's dig a bit deeper and change few things.
+
+Our goal is to change the highlighted things in below image.
+
+<img src="{{ "/img/Jekyllsite/things_to_update.JPG" | relative_url }}" alt ="this things we will update" class="img-fluid"/>
+
+We can make all these changes by making change in config.yml file, one thing to note here, after making any changes in Config file we have to restart the server then only we can see the changes made by ourselves.
+
+these are the changes we are going to make 
+##### code for the config
+{% highlight HTML %}
+
+title: MY Blog #this is the new title 
+email: abc@abc.com #this is the new email
+description: >- # here you can define the description for your website
+  this is the new description, this description will also be used by search 
+  engines to show in the search result. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: saurabh_kumar # here you can provide your twitter user name
+github_username:  hbaruas #here you can provide your github user name
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+{% endhighlight %}
+Now close the server and restart it again, using the command Jekyll serve,
+and hopefully everything should start looking something just like this.
+
+<img src="{{ "/img/Jekyllsite/change_in_config.JPG" | relative_url }}" alt ="change in config file" class="img-fluid"/>
+
+similar way you can make change in about.md file, you can add new content according to your need or modify the existing one, and if you think you need a new page you can create one similar to about.md make sure to change the name and change the permalink present in the front matter.
+here I am creating a new page called as myself.md
+
+##### code for the myself
+{% highlight HTML %}
+---
+layout: page
+title: Myself
+permalink: /myself/
+---
+<h1>this is a sample post created for demo prupose.</h1>
+<h1>this is a sample post created for demo prupose.</h1>
+<h1>this is a sample post created for demo prupose.</h1>
+<h1>this is a sample post created for demo prupose.</h1>
+<h1>this is a sample post created for demo prupose.</h1>
+
+{% endhighlight %}
+
+
+
+
+
+
 
 
 
