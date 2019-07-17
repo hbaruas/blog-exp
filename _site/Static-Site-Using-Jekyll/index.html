@@ -35,6 +35,10 @@
           Resume</a>
         </li>
 
+        <li class="nav-item">
+          <a href="https://blog.saurabhku.com" class="nav-link">My Travel Blog</a>
+        </li>
+
       </ul>
     </div>
   </div>
@@ -69,7 +73,11 @@
       </p>
       <h1>Create a static website using Jekyll and how to host on Github pages.</h1>
       <article>
-        <p>In this post I will be creating, a static website using jekyll, please go through the following installation guide to install required things, for the sake of not making this post very long I am, not writing about how to install everything in detail.</p>
+        <p>In this post I will be creating, a static website using jekyll, please go through the following installation guide to install required things, for the sake of not making this post very long, I am not writing about how to install everything in detail.</p>
+
+<p>And that’s how our end project will look like</p>
+
+<p><img src="/img/Jekyllsite/Final_product.JPG" alt="Final product" class="img-fluid" /></p>
 
 <h4 id="installation">INSTALLATION</h4>
 
@@ -181,6 +189,53 @@ if you will click on this the new page will open and you can see your detailed p
 
 <p>these are the changes we are going to make</p>
 <h5 id="code-for-the-config">code for the config</h5>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">title: MY Blog #this is the new title 
+email: abc@abc.com #this is the new email
+description: &gt;- # here you can define the description for your website
+  this is the new description, this description will also be used by search 
+  engines to show in the search result. 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname <span class="err">&amp;</span> protocol for your site, e.g. http://example.com
+twitter_username: saurabh_kumar # here you can provide your twitter user name
+github_username:  hbaruas #here you can provide your github user name
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed</code></pre></figure>
+
+<p>Now close the server and restart it again, using the command Jekyll serve,
+and hopefully everything should start looking something just like this.</p>
+
+<p><img src="/img/Jekyllsite/change_in_config.JPG" alt="change in config file" class="img-fluid" /></p>
+
+<p>similar way you can make change in about.md file, you can add new content according to your need or modify the existing one, and if you think you need a new page you can create one similar to about.md make sure to change the name and change the permalink present in the front matter.
+here I am creating a new page called as myself.md</p>
+
+<h5 id="code-for-the-myself">code for the myself</h5>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: page
+title: Myself
+permalink: /myself/
+---
+<span class="nt">&lt;h1&gt;</span>this is a sample post created for demo prupose.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1&gt;</span>this is a sample post created for demo prupose.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1&gt;</span>this is a sample post created for demo prupose.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1&gt;</span>this is a sample post created for demo prupose.<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1&gt;</span>this is a sample post created for demo prupose.<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
+
+<p>and that’s how the link will look like it will look,
+<img src="/img/Jekyllsite/myself.JPG" alt="myself position" class="img-fluid" /></p>
+
+<p>And that’s how Myself page will look like.
+<img src="/img/Jekyllsite/Myself_detail.JPG" alt="myself detailed look" class="img-fluid" /></p>
+
+<p>that’s pretty much it, your awesome blog is ready, you can host it anywhere, but we will be using github pages for that.</p>
+
+<p>But this not the only thing you can do with jekyll, you can customize pretty much everything, even the website on you are reading this article is entirely designed using jekyll and being hosted on github pages.</p>
 
 
       </article>

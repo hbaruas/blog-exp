@@ -5,7 +5,11 @@ summary: In this post, I will be writing about how to start a static jekyll site
 ---
 
 
-In this post I will be creating, a static website using jekyll, please go through the following installation guide to install required things, for the sake of not making this post very long I am, not writing about how to install everything in detail.
+In this post I will be creating, a static website using jekyll, please go through the following installation guide to install required things, for the sake of not making this post very long, I am not writing about how to install everything in detail.
+
+And that's how our end project will look like
+
+<img src="{{ "/img/Jekyllsite/Final_product.JPG" | relative_url }}" alt ="Final product" class="img-fluid"/>
 
 #### INSTALLATION
 
@@ -159,6 +163,18 @@ permalink: /myself/
 <h1>this is a sample post created for demo prupose.</h1>
 
 {% endhighlight %}
+and that's how the link will look like it will look,
+<img src="{{ "/img/Jekyllsite/myself.JPG" | relative_url }}" alt ="myself position" class="img-fluid"/>
+
+And that's how Myself page will look like.
+<img src="{{ "/img/Jekyllsite/Myself_detail.JPG" | relative_url }}" alt ="myself detailed look" class="img-fluid"/>
+
+that's pretty much it, your awesome blog is ready, you can host it anywhere, but we will be using github pages for that.
+
+But this not the only thing you can do with jekyll, you can customize pretty much everything, even the website on you are reading this article is entirely designed using jekyll and being hosted on github pages.
+
+
+
 
 
 
