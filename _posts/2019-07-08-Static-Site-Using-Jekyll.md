@@ -173,6 +173,22 @@ that's pretty much it, your awesome blog is ready, you can host it anywhere, but
 
 But this not the only thing you can do with jekyll, you can customize pretty much everything, even the website on you are reading this article is entirely designed using jekyll and being hosted on github pages.
 
+#### Hosting on Github pages
+
+We need few things to setup prior to start hosting on github pages, we need a github account and a public account, and also Git already installed in our system.
+
+This is a sort of official <a href= "https://help.github.com/en/articles/set-up-git">github and git setup URL </a>, you can check this out, very easy and helpful.
+
+After you have set up the URL and Github repo, 
+
+
+
+
+
+
+
+
+
 
 
 
